@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- MDB -->
         <link
         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
         rel="stylesheet"
@@ -32,12 +31,12 @@
     <title>totalDevs</title>
   </head>
   <body>
-    
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand">
-            <img src="img/logo_TD.png" height="25" alt="">
+            <img src="img/logo_TD_dark_sm.png" height="25" alt="">
         </a>
 
         <button
@@ -70,15 +69,16 @@
 
     <!-- MainInfo -->
     <section
-      class="bg-image bg-dark text-light text-center text-sm-start p-5 p-lg-0 pt-lg-5" style="background-image:url('img/bg_machinery.jpg');"
+      class="bg-image bg-dark text-light text-center text-sm-start p-5 p-lg-0 pt-lg-5" style="background-image:url('img/bg.jpg');"
     >
       <div class="container">
-        <div class="d-flex flex-column align-items-start justify-content-evenly" style="height: 90vh; width: 30vw">
-            <h1><span class="text-warning fw-bold">Revolutionizing the Future:</span><br> unleash the power of technology with us</h1>
+        <div class="d-flex flex-column align-items-start justify-content-evenly" style="height: 90vh; width: 45vw">
+            <h1><span class="text-light fw-bold lh-lg bg-primary py-1 px-3">Revolutionizing the Future</span><br><span class="fw-bold text-dark bg-light px-3 mt-3">unleash the power of technology with us</span></h1>
             <button 
-              class="btn btn-primary btn-lg"
+              class="btn btn-lg btn-warning tn-lg text-secondary fw-semibold"
               data-bs-toggle="modal"
               data-bs-target="#contact"
+              style="border-radius:0"
             >
               Contact Us
             </button>
@@ -90,16 +90,16 @@
     <section id="industries" class="p-5">
       <div class="container">
         <div class="d-flex justify-content-center pt-5">
-            <h2> Industries</h2>
+            <h2 class="text-dark"> Industries</h2>
         </div>
         <div class="row text-center g-4 mt-3">
           <div class="col-md">
-            <div class="card bg-secondary text-light">
+            <div class="card border-secondary text-secondary">
               <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-bank"></i>
+                <div class="h2 mb-3"  style="background-image:url('img/banking.jpg'); height: 200px;">
+                  <!-- <i class="bi bi-bank2"></i> -->
                 </div>
-                <h3 class="card-title mb-3">Banking</h3>
+                <h3 class="card-title fs-4 mb-3 bg-dark text-light py-2">Banking</h3>
                 <p class="card-text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Iure, quas quidem possimus dolorum esse eligendi?
@@ -108,12 +108,12 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-secondary text-light">
+            <div class="card border-secondary text-secondary">
               <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-cash-coin"></i>
+                <div class="h2 mb-3" style="background-image:url('img/insurance.jpg'); height: 200px;">
+                  <!-- <i class="bi bi-shield-shaded"></i> -->
                 </div>
-                <h3 class="card-title mb-3">Finances</h3>
+                <h3 class="card-title fs-4 mb-3 bg-dark text-light py-2">Insurance</h3>
                 <p class="card-text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Iure, quas quidem possimus dolorum esse eligendi?
@@ -122,12 +122,12 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-secondary text-light">
+            <div class="card border-secondary text-secondary">
               <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-shield-shaded"></i>
-                </div>
-                <h3 class="card-title mb-3">Insurance</h3>
+                  <div class="h2 mb-3" style="background-image:url('img/finances.jpg'); height: 200px;">
+                    <!-- <i class="bi bi-cash-stack"></i> -->
+                  </div>
+                <h3 class="card-title fs-4 mb-3 bg-dark text-light py-2">Finances</h3>
                 <p class="card-text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Iure, quas quidem possimus dolorum esse eligendi?
@@ -350,7 +350,7 @@
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="d-flex flex-nowrap justify-content-center col-md-4">
         <a href="#" class="navbar-brand">
-          <img src="img/logo_TD.png" height="25" alt="">
+          <img src="img/logo_TD_dark_sm.png" height="25" alt="">
         </a>
       </p>
       <p class="col-md-2 mb-0 text-body-secondary text-center">Copyright &copy; 2023 totalDevs</p>
@@ -384,11 +384,11 @@
     >
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header bg-primary text-light">
+          <div class="modal-header bg-dark text-light">
             <h5 class="modal-title" id="contactLabel">Contact Us</h5>
             <button
               type="button"
-              class="btn-close"
+              class="btn-close btn-close-white"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
